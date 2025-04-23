@@ -1,8 +1,7 @@
-import path from 'path';
+import { fileURLToPath, pathToFileURL } from 'url';
+import { dirname, path } from 'path';
 import { release, version } from 'os';
 import { createServer as createServerHttp } from 'http';
-import { fileURLToPath, pathToFileURL } from 'url';
-import { dirname } from 'path';
 import jsonA from './files/a.json' with { type: 'json' };
 import jsonB from './files/a.json' with { type: 'json' };
 
